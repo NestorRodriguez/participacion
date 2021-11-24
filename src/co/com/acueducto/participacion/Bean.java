@@ -7,7 +7,7 @@ import javax.inject.Named;
 @RequestScoped
 public class Bean {
 	
-	private String saludo="Saludo desde bean";
+	private String saludo="Prueba 1";
 
 	public String getSaludo() {
 		return saludo;
