@@ -1,4 +1,4 @@
-package participAccion;
+package co.com.acueducto.participacion;
 
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Named;
