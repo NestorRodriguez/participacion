@@ -1,0 +1,56 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:b="http://bootsfaces.net/ui" xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<title>Participación ciudadana</title>
+
+	<script type="text/javascript">
+		PrimeFaces.locales["es"] = {
+			closeText : "Cerrar",
+			prevText : "Anterior",
+			nextText : "Siguiente",
+			monthNames : [ "Enero", "Febrero", "Marzo", "Abril", "Mayo",
+					"Junio", "Julio", "Agosto", "Septiembre", "Octubre",
+					"Noviembre", "Diciembre" ],
+			monthNamesShort : [ "Ene", "Feb", "Mar", "Abr", "May", "Jun",
+					"Jul", "Ago", "Sep", "Oct", "Nov", "Dic" ],
+			dayNames : [ "Domingo", "Lunes", "Martes", "Miércoles", "Jueves",
+					"Viernes", "Sábado" ],
+			dayNamesShort : [ "Dom", "Lun", "Mar", "Mie", "Jue", "Vie", "Sab" ],
+			dayNamesMin : [ "Do", "Lu", "Ma", "Mi", "Ju", "Vi", "Sa" ],
+			weekHeader : "Semana",
+			firstDay : 0,
+			isRTL : false,
+			showMonthAfterYear : false,
+			yearSuffix : "",
+			timeOnlyTitle : "Solo hora",
+			timeText : "Tiempo",
+			hourText : "Hora",
+			minuteText : "Minuto",
+			secondText : "Segundo",
+			currentText : "Fecha actual",
+			ampm : false,
+			month : "Mes",
+			week : "Semana",
+			day : "Día",
+			allDayText : "Todo el día"
+		};
+	</script>
+	<h:outputStylesheet library="css" name="css/base.css" />
+	<h:outputStylesheet library="css" name="css/pps-main.css" />
+	<h:outputStylesheet library="css" name="css/home.css" />
+</h:head>
+<h:body>
+	<p:layout fullPage="true">
+		<p:layoutUnit id="bas" position="center">
+			<a href="#{request.contextPath}/index.xhtml"><img
+				src="#{request.contextPath}/resources/images/logo.png" width="40%"/>
+			</a>
+			<ui:insert name="body" />
+		</p:layoutUnit>
+	</p:layout>
+</h:body>
+</html>

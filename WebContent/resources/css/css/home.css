@@ -1,0 +1,19 @@
+@charset "ISO-8859-1";
+
+.homeTitle{
+	margin:5px 0px;
+}
+
+.homePanel{
+	margin : 7%;
+}
+
+.listValue{
+	margin: 0px 5px;
+}
+
+.align{
+	margin: 5px 5px;
+	text-align: left;
+	border-style: groove;
+}

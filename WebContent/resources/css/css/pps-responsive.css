@@ -1,0 +1,73 @@
+/*----------------------------------------------------------------------------*/
+/*DESKTOPS*/
+/*----------------------------------------------------------------------------*/
+@media (min-width:1025px){
+    #pps-main-wrapper
+    {
+        min-height: 800px;
+    }
+}
+
+
+
+/*----------------------------------------------------------------------------*/
+/*TABLETS*/
+/*----------------------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------------------*/
+/*HOME*/
+/*----------------------------------------------------------------------------*/
+
+/*
+ul.pps-links-principales
+{
+    list-style-type: none !important;
+}
+.pps-link-principal
+{ 
+    text-transform: uppercase; font-size: .9rem; letter-spacing: .7px;
+}
+.pps-link-principal:hover
+{ 
+    
+}
+
+.pps-categoria-wrapper
+{
+    min-height: 285px; display: grid;
+}
+
+.pps-categoria-wrapper .row .col-md-12
+{
+    display: flex; flex-flow: column; justify-content: center;
+}
+
+.empresario-item .col-md-6, .consumidor-item .col-md-6
+{
+    display: flex; justify-content: center; align-items: center; transition: all .15s ease-in-out;
+}
+.empresario-item .col-md-6.mid-green_bg:hover
+{
+    
+}
+.consumidor-item .col-md-6.yellow_bg
+{
+    transition: all .15s ease-in-out;
+}
+.consumidor-item .col-md-6.yellow_bg:hover
+{
+    
+}
+
++/
+
+.empresario-item .col-md-6 a, .consumidor-item .col-md-6 a
+{
+    display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;
+    text-transform: uppercase; font-weight: 600;
+}
+.empresario-item .col-md-6 a:hover, .consumidor-item .col-md-6 a:hover
+{
+    color: white;
+}

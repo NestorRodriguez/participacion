@@ -1,14 +1,63 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-      xmlns:f="http://xmlns.jcp.org/jsf/core"
-      xmlns:h="http://xmlns.jcp.org/jsf/html"> 
-
-<h:head></h:head> 
-<body> 
-	<h1>Bienvenido</h1>
-	<h:form>
-		<h:outputText value="#{bean.saludo}" />
-	</h:form>
-</body> 
-</html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:adm="http://github.com/adminfaces"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:pe="http://primefaces.org/ui/extensions"
+	xmlns:b="http://bootsfaces.net/ui"
+	xmlns:t="http://myfaces.apache.org/tomahawk" template="/base.xhtml">
+	<ui:define name="body">
+		<f:metadata>
+			<f:viewAction action="#{logonMB.init}" />
+		</f:metadata>
+		<div id="form" prependId="false">
+			<h:form class="container">
+				<h1 class="bold pps-titulo-principal" style="font-size: 24px;">Portal
+					de Participación Ciudadana</h1>
+				<b:container fluid="true">
+					<p:messages id="messages" showDetail="true" closable="true" sticky="true"/>
+					<b:row styleClass="show-grid">
+						<b:column span="6" offset="3">
+							<p:panel id="autenticacion" header="Autenticacion">
+								<f:facet name="footer">
+									<br></br>
+									<div align="center">
+										<b:commandButton value="Ingresar" action="#{logonMB.login()}"
+											look="success" update="@form" />
+									</div>
+									<br></br>
+									<div class="text-center">
+										<a
+											onclick="window.location.href='/participAccion/registrar/registrar.xhtml'"
+											class="w-100" style="cursor: pointer;">Aún no está
+											registrado - Registrarse</a>
+									</div>
+									<br></br>
+								</f:facet>
+								<div>
+									<b:inputText placeholder="Correo electrónico" required="true"
+										label="Correo" colMd="8" labelColMd="4"
+										value="#{logonMB.usuario.correoElectronico}">
+										<f:facet name="prepend">
+											<b:icon name="user" />
+										</f:facet>
+									</b:inputText>
+									<b:inputSecret placeholder="Contraseña" required="true"
+										label="Contraseña" colMd="8" labelColMd="4"
+										value="#{logonMB.usuario.password}">
+										<f:facet name="prepend">
+											<b:iconAwesome name="key" />
+										</f:facet>
+									</b:inputSecret>
+								</div>
+							</p:panel>
+						</b:column>
+					</b:row>
+				</b:container>
+			</h:form>
+		</div>
+	</ui:define>
+</ui:composition>
