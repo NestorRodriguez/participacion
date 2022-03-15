@@ -14,7 +14,7 @@ public class ClienteBean {
 	
 	@SuppressWarnings("unused")
 	private static void main(String[] args) {
-		EntityManagerFactory emf = Persistence.createEntityManagerFactory("myEntityManager");
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("PARTICIPACION_UP");
 		EntityManager em = emf.createEntityManager();
 		EntityTransaction et = em.getTransaction();
 		

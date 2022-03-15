@@ -9,10 +9,10 @@
 	xmlns:pe="http://primefaces.org/ui/extensions"
 	xmlns:b="http://bootsfaces.net/ui"
 	xmlns:t="http://myfaces.apache.org/tomahawk" template="/base.xhtml">
+	<f:metadata>
+		<f:viewAction action="#{logonMB.init}" />
+	</f:metadata>
 	<ui:define name="body">
-		<f:metadata>
-			<f:viewAction action="#{logonMB.init}" />
-		</f:metadata>
 		<div id="form" prependId="false">
 			<h:form class="container">
 				<h1 class="bold pps-titulo-principal" style="font-size: 24px;">Portal

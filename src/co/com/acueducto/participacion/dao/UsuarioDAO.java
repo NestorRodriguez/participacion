@@ -13,7 +13,7 @@ import co.com.acueducto.participacion.entities.Usuario;;
 @Stateless
 public class UsuarioDAO implements IUsuarioDAO {
 
-	@PersistenceContext(unitName = "myEntityManager")
+	@PersistenceContext(unitName = "PARTICIPACION_UP")
 	EntityManager entity;
 
 	// Crear usuario
